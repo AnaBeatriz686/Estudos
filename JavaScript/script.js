@@ -1,0 +1,168 @@
+// Examples of integers.
+console.log(3);
+console.log(5);
+console.log(-67);
+
+// Examples of floating point numbers.
+console.log(3.14);
+console.log(7.2);
+console.log(-14.5);
+
+// Examples of string.
+console.log("I love to code!");
+console.log('I love to code!');
+
+// Example of object.
+const person = {
+    name: "John",
+    age: 30,
+};
+
+// Examples of variables.
+let age;
+console.log(age); // undefined
+
+let age = 25;
+console.log(age); // 25
+
+let age = 25;
+console.log(age); // 25
+age = 30;
+console.log(age); // 30
+
+const maxScore = 100;
+console.log(maxScore); // 100
+maxScore = 200; // This will result in an error
+
+const age; // Error: Missing initializer in const declaration
+
+// Examples of string concatenation using the concat() method.
+let str1 = 'Hello';
+let str2 = 'World';
+
+let result = str1.concat(' ', str2);
+console.log(result); // Hello World
+
+// Examples of string concatenation using template literals.
+const name = "Alice";
+const age = 25;
+const message = "My name is " + name + " and I am " + age + " years old.";
+console.log(message);
+
+const name = "Alice";
+const age = 25;
+const message = `My name is ${name} and I am ${age} years old.`;
+console.log(message);
+
+// Examples of template literals with expressions.
+const song = "Bohemian Rhapsody";
+const score = 9.5;
+const highestScore = 10;
+const output = `One of my favorite songs is "${song}". I rated it ${(score / highestScore) * 100
+    }%.`;
+console.log(output);
+
+// JavaScript is a dynamically typed language, which means that you don't have to specify the data type of a variable when you declare it. The data type is determined automatically based on the value assigned to the variable. For example:
+let example = "Hello";
+example = 42;
+
+let data = 100;  // Initially a number
+data = "New data";  // Dynamically changes to a string
+
+// Examples of the typeof operator.
+let num = 42;
+console.log(typeof num); // "number"
+
+let exampleVariable = null;
+console.log(typeof exampleVariable); // "object"
+
+// Example of the symbol data type.
+const crypticKey1 = Symbol("saltNpepper");
+const crypticKey2 = Symbol("saltNpepper");
+console.log(crypticKey1 === crypticKey2); // false, because each symbol is unique
+
+// Accessing characters of strings.
+let greeting = "hello";
+console.log(greeting[1]); // "e"
+
+let greeting = "hello";
+let firstTwo = greeting[0] + greeting[1]; // "he"
+console.log(firstTwo);
+
+// Locating substrings within strings.
+let phrase = "The quick brown fox jumps over the lazy dog.";
+console.log(phrase.indexOf("fox")); // 10
+console.log(phrase.indexOf("dog")); // 35
+console.log(phrase.indexOf("cat")); // -1 (not found)
+
+// Example of the prompt() function.
+let userInput = prompt("Please enter your name:");
+console.log("Hello, " + userInput + "!");
+
+// Example of the alert() function.
+alert("This is an alert message!");
+
+// Example of the confirm() function.
+let userConfirmation = confirm("Do you want to proceed?");
+if (userConfirmation) {
+    console.log("User chose to proceed.");
+} else {
+    console.log("User canceled the action.");
+}
+
+/*  <button id="prompt-btn">Show Prompt</button>
+    <p id="output"></p>
+    <script src="index.js"></script> */
+
+const btn = document.getElementById("prompt-btn");
+const output = document.getElementById("output");
+btn.addEventListener("click", () => {
+    const userName = prompt("What is your name?", "Guest");
+    output.textContent = "Hello, " + userName + "!";
+});
+
+// Exercise 1 - Build a Teacher ChatBot.
+
+console.log("Hi there!");
+
+const botName = "teacherBot";
+
+const greeting = `My name is ${botName}.`;
+console.log(greeting);
+
+const subject = "JavaScript";
+const topic = "strings";
+
+const sentence = `Today, you will learn about ${topic} in ${subject}.`;
+console.log(sentence);
+
+const strLengthIntro = `Here is an example of using the length property on the word ${subject}.`;
+console.log(strLengthIntro);
+
+console.log(subject.length);
+
+console.log(`Here is an example of using the length property on the word ${topic}.`);
+console.log(topic.length);
+
+console.log(`Here is an example of accessing the first letter in the word ${subject}.`);
+
+console.log(subject[0]);
+
+console.log(`Here is an example of accessing the second letter in the word ${subject}.`);
+console.log(subject[1]);
+
+console.log(`Here is an example of accessing the last letter in the word ${subject}.`);
+
+const lastCharacter = subject[subject.length - 1];
+console.log(lastCharacter);
+
+const learningIsFunSentence = "Learning is fun.";
+
+console.log("Here are examples of finding the positions of substrings in the sentence.");
+
+console.log(learningIsFunSentence.indexOf("Learning"));
+
+console.log(learningIsFunSentence.indexOf("fun"));
+console.log(learningIsFunSentence.indexOf("learning"));
+
+console.log("I hope you enjoyed learning today.");
