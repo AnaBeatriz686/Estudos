@@ -175,7 +175,7 @@ console.log(letter.charCodeAt(0));  // 65
 let char = String.fromCharCode(65);
 console.log(char);  //  A
 
-// String Search
+// String Search.
 
 let phrase = "JavaScript is awesome!";
 let result = phrase.includes("awesome");
@@ -192,7 +192,7 @@ let result = text.includes("JavaScript", 7); // Start searching from index 7
 
 console.log(result);  // true
 
-// Slice method
+// Slice method.
 
 let message = "Hello, world!";
 let greeting = message.slice(0, 5);
@@ -203,3 +203,59 @@ let message = "JavaScript is fun!";
 let lastWord = message.slice(-4); // It counts from the end of the string
 
 console.log(lastWord);  // fun!
+
+// String formatting methods.
+
+let greeting = "Hello, World!";
+let uppercaseGreeting = greeting.toUpperCase();
+console.log(uppercaseGreeting);  // "HELLO, WORLD!"
+
+let shout = "I AM LEARNING JAVASCRIPT!";
+let lowercaseShout = shout.toLowerCase();
+console.log(lowercaseShout);  // "i am learning javascript!"
+
+let message = "   Hello!   ";
+console.log(message); // "   Hello!   "
+let trimmedMessage = message.trim();
+console.log(trimmedMessage);  // "Hello!"
+
+let greeting = "   Hello!   ";
+console.log(greeting);  // "   Hello!   "
+let trimmedStart = greeting.trimStart();
+console.log(trimmedStart);  // "Hello!   "
+
+let greeting = "   Hello!   ";
+console.log(greeting);  // "   Hello!   "
+let trimmedEnd = greeting.trimEnd();
+console.log(trimmedEnd);  // "   Hello!"
+
+// Exercise 2 - Build a String Formatter.
+
+const userInput = "   Hello World!   ";
+console.log("Original input:");
+console.log(userInput);
+
+const cleanedInput = userInput.trim();
+console.log("Result of trimming whitespace from both ends:");
+console.log(cleanedInput);
+
+const trimmedStart = userInput.trimStart();
+console.log("After using the trimStart() method, leading spaces removed:");
+console.log(trimmedStart);
+
+const trimmedEnd = userInput.trimEnd();
+console.log("After using the trimEnd() method, trailing spaces removed:");
+console.log(trimmedEnd);
+
+const upperCaseInput = cleanedInput.toUpperCase();
+console.log("Result of using the toUpperCase() method:");
+console.log(upperCaseInput);
+
+const lowerCaseInput = cleanedInput.toLowerCase();
+console.log("Result of using the toLowerCase() method:");
+console.log(lowerCaseInput);
+
+const lowercaseWord = "camelcase";
+const camelCasedVersion = lowercaseWord.slice(0, 5) + lowercaseWord[5].toUpperCase() + lowercaseWord.slice(-3);
+console.log("Camel cased version:");
+console.log(camelCasedVersion);
