@@ -166,3 +166,40 @@ console.log(learningIsFunSentence.indexOf("fun"));
 console.log(learningIsFunSentence.indexOf("learning"));
 
 console.log("I hope you enjoyed learning today.");
+
+// ASCII (American Standard Code for Information Interchange) is a character encoding standard that represents text in computers and other devices that use text. Each character is assigned a unique numerical value, known as its ASCII code.
+
+let letter = "A";
+console.log(letter.charCodeAt(0));  // 65
+
+let char = String.fromCharCode(65);
+console.log(char);  //  A
+
+// String Search
+
+let phrase = "JavaScript is awesome!";
+let result = phrase.includes("awesome");
+
+console.log(result);  // true
+
+let phrase = "JavaScript is awesome!";
+let result = phrase.includes("Awesome"); // Case-sensitive 
+
+console.log(result);  // false
+
+let text = "Hello, JavaScript world!";
+let result = text.includes("JavaScript", 7); // Start searching from index 7
+
+console.log(result);  // true
+
+// Slice method
+
+let message = "Hello, world!";
+let greeting = message.slice(0, 5);
+
+console.log(greeting);  // Hello
+
+let message = "JavaScript is fun!";
+let lastWord = message.slice(-4); // It counts from the end of the string
+
+console.log(lastWord);  // fun!
