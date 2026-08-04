@@ -1,0 +1,40 @@
+h1 {
+    color: #E29B9E;
+    text-align: center;
+    font-family: Pinyon Script, cursive;
+    text-shadow: 2px 2px black;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Pinyon Script, cursive;
+    letter-spacing: 3px;
+}
+
+#preparo, #ingredientes{
+    color: #E9B0B3;
+}
+
+img{
+    align-items: center;
+    border: #E29B9E solid 5px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+div{
+    border: #E29B9E solid 5px;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 1500px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: white
+}
+
+body{
+    max-width: 1500px;
+    margin: auto;
+    background-color: #f8ebec;
+    font-family: Merriweather, serif;
+}
