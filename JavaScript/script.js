@@ -1,24 +1,29 @@
 // Examples of integers.
+
 console.log(3);
 console.log(5);
 console.log(-67);
 
 // Examples of floating point numbers.
+
 console.log(3.14);
 console.log(7.2);
 console.log(-14.5);
 
 // Examples of string.
+
 console.log("I love to code!");
 console.log('I love to code!');
 
 // Example of object.
+
 const person = {
     name: "John",
     age: 30,
 };
 
 // Examples of variables.
+
 let age;
 console.log(age); // undefined
 
@@ -37,6 +42,7 @@ maxScore = 200; // This will result in an error
 const age; // Error: Missing initializer in const declaration
 
 // Examples of string concatenation using the concat() method.
+
 let str1 = 'Hello';
 let str2 = 'World';
 
@@ -44,6 +50,7 @@ let result = str1.concat(' ', str2);
 console.log(result); // Hello World
 
 // Examples of string concatenation using template literals.
+
 const name = "Alice";
 const age = 25;
 const message = "My name is " + name + " and I am " + age + " years old.";
@@ -55,6 +62,7 @@ const message = `My name is ${name} and I am ${age} years old.`;
 console.log(message);
 
 // Examples of template literals with expressions.
+
 const song = "Bohemian Rhapsody";
 const score = 9.5;
 const highestScore = 10;
@@ -63,6 +71,7 @@ const output = `One of my favorite songs is "${song}". I rated it ${(score / hig
 console.log(output);
 
 // JavaScript is a dynamically typed language, which means that you don't have to specify the data type of a variable when you declare it. The data type is determined automatically based on the value assigned to the variable. For example:
+
 let example = "Hello";
 example = 42;
 
@@ -70,6 +79,7 @@ let data = 100;  // Initially a number
 data = "New data";  // Dynamically changes to a string
 
 // Examples of the typeof operator.
+
 let num = 42;
 console.log(typeof num); // "number"
 
@@ -77,11 +87,13 @@ let exampleVariable = null;
 console.log(typeof exampleVariable); // "object"
 
 // Example of the symbol data type.
+
 const crypticKey1 = Symbol("saltNpepper");
 const crypticKey2 = Symbol("saltNpepper");
 console.log(crypticKey1 === crypticKey2); // false, because each symbol is unique
 
 // Accessing characters of strings.
+
 let greeting = "hello";
 console.log(greeting[1]); // "e"
 
@@ -90,19 +102,23 @@ let firstTwo = greeting[0] + greeting[1]; // "he"
 console.log(firstTwo);
 
 // Locating substrings within strings.
+
 let phrase = "The quick brown fox jumps over the lazy dog.";
 console.log(phrase.indexOf("fox")); // 10
 console.log(phrase.indexOf("dog")); // 35
 console.log(phrase.indexOf("cat")); // -1 (not found)
 
 // Example of the prompt() function.
+
 let userInput = prompt("Please enter your name:");
 console.log("Hello, " + userInput + "!");
 
 // Example of the alert() function.
+
 alert("This is an alert message!");
 
 // Example of the confirm() function.
+
 let userConfirmation = confirm("Do you want to proceed?");
 if (userConfirmation) {
     console.log("User chose to proceed.");
@@ -260,8 +276,8 @@ const camelCasedVersion = lowercaseWord.slice(0, 5) + lowercaseWord[5].toUpperCa
 console.log("Camel cased version:");
 console.log(camelCasedVersion);
 
-
 // String modification methods.
+
 string.replace(searchValue, newValue);
 
 let text = "I love JavaScript!";
@@ -301,3 +317,89 @@ let count = 4;
 let word = "Test";
 let repeatedWord = word.repeat(count);
 console.log(repeatedWord); // TestTestTestTest
+
+// Numbers.
+
+const wholeNumber = 50;
+const decimalNumber = 4.5;
+const negativeNumber = -7;
+
+console.log(typeof wholeNumber); // number
+console.log(typeof decimalNumber); // number
+console.log(typeof negativeNumber); // number
+
+const infiniteNumber = 1 / 0;
+console.log(infiniteNumber); // Infinity
+console.log(typeof infiniteNumber); // number
+
+const notANumber = 'hello world' / 2;
+console.log(notANumber); // NaN
+
+const notANumber = 'hello world' / 2;
+console.log(typeof notANumber); // number
+
+// Arithmetic Operators.
+
+const num1 = 10;
+const num2 = 5;
+const num3 = 15;
+
+const result1 = num1 + num2;
+const result2 = num2 + num1;
+const result3 = num2 + num1 + num3;
+
+console.log(result1); // 15
+console.log(result2); // 15
+console.log(result3); // 30
+
+const difference = 10 - 5;
+console.log(difference); // 5
+
+const difference = 5 - 10;
+console.log(difference); // -5
+
+const num1 = 10;
+const num2 = 5;
+const result = num1 - num2;
+
+console.log(result); // 5 
+
+const num1 = 10;
+const num2 = 5;
+const num3 = 15;
+
+const result1 = num1 * num2;
+const result2 = num2 * num1;
+const result3 = num2 * num1 * num3;
+
+console.log(result1); // 50
+console.log(result2); // 50
+console.log(result3); // 750
+
+const num1 = 10;
+const num2 = 5;
+const num3 = 15;
+
+const result1 = num1 / num2;
+const result2 = num2 / num1;
+const result3 = num2 / num1 / num3;
+
+console.log(result1); // 2
+console.log(result2); // 0.5
+console.log(result3); // 0.03333333333333333
+
+const result = 10 / 0; 
+
+console.log(result); // Infinity
+
+const num1 = 10;
+const num2 = 3;
+const remainder = num1 % num2; // Remainder operator
+
+console.log(remainder); // 1
+
+const num1 = 2;
+const num2 = 3;
+
+const exponent = num1 ** num2; // Exponentiation operator
+console.log(exponent); // 8
