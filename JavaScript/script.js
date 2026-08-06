@@ -259,3 +259,45 @@ const lowercaseWord = "camelcase";
 const camelCasedVersion = lowercaseWord.slice(0, 5) + lowercaseWord[5].toUpperCase() + lowercaseWord.slice(-3);
 console.log("Camel cased version:");
 console.log(camelCasedVersion);
+
+
+// String modification methods.
+string.replace(searchValue, newValue);
+
+let text = "I love JavaScript!";
+console.log(text); // "I love JavaScript!"
+let newText = text.replace("JavaScript", "coding");
+console.log(newText);  // "I love coding!"
+
+let sentence = "I enjoy working with JavaScript.";
+console.log(sentence);  // "I enjoy working with JavaScript."
+let updatedSentence = sentence.replace("javascript", "coding"); // Case sensitive.
+console.log(updatedSentence);  // "I enjoy working with JavaScript."
+
+let phrase = "Hello, world! Welcome to the world of coding.";
+console.log(phrase);  // "Hello, world! Welcome to the world of coding."
+let updatedPhrase = phrase.replace("world", "universe"); // Only replaces the first occurrence of the searchValue.
+console.log(updatedPhrase);  // "Hello, universe! Welcome to the world of coding."
+
+string.repeat(count);
+
+let word = "Hello!";
+let repeatedWord = word.repeat(3);
+console.log(repeatedWord);  // "Hello!Hello!Hello!"
+
+let word = "Test";
+console.log(word.repeat(-1));  // Throws RangeError: Invalid count value
+
+let word = "Test";
+console.log(word.repeat(Infinity));  // Throws RangeError: Invalid count value
+
+let word = "Test";
+console.log(word.repeat(2.5));  // "TestTest"
+
+let word = "Test";
+console.log(word.repeat(0));  // ""
+
+let count = 4;
+let word = "Test";
+let repeatedWord = word.repeat(count);
+console.log(repeatedWord); // TestTestTestTest
