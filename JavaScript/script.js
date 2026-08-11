@@ -403,3 +403,66 @@ const num2 = 3;
 
 const exponent = num1 ** num2; // Exponentiation operator
 console.log(exponent); // 8
+
+// Adding strings and numbers,
+
+const result = 5 + '10';
+
+console.log(result); // 510
+console.log(typeof result); // string
+
+// Subtracting strings and numbers.
+
+const subtractionResult = '10' - 5;
+console.log(subtractionResult); // 5
+console.log(typeof subtractionResult); // number
+
+// Dividing strings and numbers.
+
+const divisionResult = '20' / 2;
+console.log(divisionResult); // 10
+console.log(typeof divisionResult); // number
+
+// Multiplying strings and numbers.
+
+const multiplicationResult = '10' * 2;
+console.log(multiplicationResult); // 20
+console.log(typeof multiplicationResult); // number
+
+// Examples of the string not being a number.
+
+const subtractionResult = 'abc' - 5;
+console.log(subtractionResult); // NaN
+console.log(typeof subtractionResult); // number
+
+const multiplicationResult = 'abc' * 2;
+console.log(multiplicationResult); // NaN
+console.log(typeof multiplicationResult); // number
+
+const divisionResult = 'abc' / 2;
+console.log(divisionResult); // NaN
+console.log(typeof divisionResult); // number
+
+// Arithmetic operations with booleans.
+
+const result1 = true + 1;
+console.log(result1); // 2
+console.log(typeof result1); // number
+
+const result2 = false + 1;
+console.log(result2); // 1
+console.log(typeof result2); // number
+
+const result3 = 'Hello' + true;
+console.log(result3); // "Hellotrue"
+console.log(typeof result3); // string
+
+// Adding to null and undefined variables.
+
+const result1 = null + 5;
+console.log(result1); // 5
+console.log(typeof result1); // number
+
+const result2 = undefined + 5;
+console.log(result2); // NaN
+console.log(typeof result2); // number
