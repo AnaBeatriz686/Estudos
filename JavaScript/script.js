@@ -466,3 +466,23 @@ console.log(typeof result1); // number
 const result2 = undefined + 5;
 console.log(result2); // NaN
 console.log(typeof result2); // number
+
+// Operator behavior - prefix and postfix.
+
+let x = 5;
+
+console.log(++x); // 6, increases the value of the variable first, then returns a new value.
+console.log(x); // 6
+
+let y = 5;
+
+console.log(y++); // 5, returns the current value of the variable first, then increases the value of the variable.
+console.log(y); // 6
+
+let x = 5;
+console.log(--x); // 4
+console.log(x); // 4
+
+let y = 5;
+console.log(y--); // 5
+console.log(y); // 4
