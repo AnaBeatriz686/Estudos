@@ -486,3 +486,97 @@ console.log(x); // 4
 let y = 5;
 console.log(y--); // 5
 console.log(y); // 4
+
+// Unary Operators.
+
+const str = '42';
+const strToNum = +str;
+
+console.log(strToNum); // 42
+console.log(typeof str); // string
+console.log(typeof strToNum); // number
+
+const str = '42';
+const strToNegativeNum = -str;
+
+console.log(strToNegativeNum); // -42
+console.log(typeof str); // string
+console.log(typeof strToNegativeNum); // number
+
+let isOnline = true;
+console.log(!isOnline); // false
+
+let isOffline = false;
+console.log(!isOffline); // true
+
+const result = void (2 + 2);
+console.log(result); // undefined
+
+// Bitwise AND
+
+let a = 5;  // Binary: 101
+let b = 3;  // Binary: 011
+console.log(a & b);  // 1 (Binary: 001)
+
+// Bitwise OR
+
+let a = 5;  // Binary: 101
+let b = 3;  // Binary: 011
+console.log(a | b);  // 7 (Binary: 111)
+
+// Bitwise XOR
+
+let a = 5;  // Binary: 101
+let b = 3;  // Binary: 011
+console.log(a ^ b);  // 6 (Binary: 110)
+
+// Bitwise NOT
+
+let a = 5;  // Binary: 101
+console.log(~a);  // -6
+
+// Left shift
+
+let a = 5;  // Binary: 101
+console.log(a << 1);  // 10 (Binary: 1010)
+
+// Right shift
+
+let a = 5;  // Binary: 101
+console.log(a >> 1);  // 2 (Binary: 10)
+
+// Ternary Operator.
+
+condition ? expressionIfTrue : expressionIfFalse;
+
+// Math object.
+
+const randomNum = Math.random();
+console.log(randomNum);
+// any number between 0 and 1 – 0 inclusive and 1 exclusive
+
+const smallest = Math.min(1, 5, 3, 9);
+console.log(smallest); // 1
+
+const largest = Math.max(1, 5, 3, 9);
+console.log(largest); // 9
+
+console.log(Math.ceil(4.3)); // 5 - rounds the number up
+
+console.log(Math.floor(4.7)); // 4 - rounds the number down
+
+console.log(Math.round(4.5)); // 5 - rounds the number to the nearest integer
+
+const randomNumBtw1And20 = Math.floor(Math.random() * 20) + 1;
+console.log(randomNumBtw1And20); // Generating a random number between 20 and 1 would look like this.
+
+console.log(Math.trunc(2.9)); // 2
+
+console.log(Math.sqrt(81)); // 9 - square root of 81
+console.log(Math.cbrt(27)); // 3 - cube root of 27
+
+console.log(Math.abs(-5)); // 5
+console.log(Math.abs(5)); // 5 - returns the absolute value of a number
+
+console.log(Math.pow(2, 3)); // 8
+console.log(Math.pow(8, 2)); // 64 - raises the first number to the power of the second number
