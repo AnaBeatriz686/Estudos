@@ -388,7 +388,7 @@ console.log(result1); // 2
 console.log(result2); // 0.5
 console.log(result3); // 0.03333333333333333
 
-const result = 10 / 0; 
+const result = 10 / 0;
 
 console.log(result); // Infinity
 
@@ -580,3 +580,74 @@ console.log(Math.abs(5)); // 5 - returns the absolute value of a number
 
 console.log(Math.pow(2, 3)); // 8
 console.log(Math.pow(8, 2)); // 64 - raises the first number to the power of the second number
+
+// parseInt() and parseFloat() methods.// Exercise 3 - Build a Fortune Teller.
+
+console.log(parseFloat("3.14"));     // 3.14
+console.log(parseFloat("3.14 abc")); // 3.14
+console.log(parseFloat("3.14.5"));   // 3.14
+console.log(parseFloat("abc 3.14")); // NaN
+
+console.log(parseInt("42"));       // 42
+console.log(parseInt("42px"));     // 42
+console.log(parseInt("3.14"));     // 3
+console.log(parseInt("abc123"));   // NaN
+
+// toFixed() method.
+
+console.log((3.14159).toFixed(3));  // "3.142"
+console.log((3.14449).toFixed(3));  // "3.144"
+console.log((3.14550).toFixed(3));  // "3.146"
+let num = 3.14159;
+console.log(num.toFixed()); // "3"
+
+// Null and Undefined Data Types.
+
+console.log(null == undefined); // true
+console.log(null === undefined); // false
+
+console.log(null == 0);  // false
+console.log(null == ''); // false
+console.log(undefined == 0); // false
+console.log(undefined == ''); // false
+
+console.log(null > 0);  // false
+console.log(null == 0); // false
+console.log(null >= 0); // true
+
+console.log(undefined > 0);  // false
+console.log(undefined < 0);  // false
+console.log(undefined == 0); // false
+
+// Switch and If/Else Statements.
+
+switch (expression) {
+    case value1:
+        // code to be executed if expression === value1
+        break;
+    case value2:
+        // code to be executed if expression === value2
+        break;
+    default:
+    // code to be executed if expression doesn't match any case
+}
+
+let creditScore = 720; 
+let annualIncome = 60000; 
+let loanAmount = 200000; 
+
+let eligibilityStatus;
+
+if (creditScore >= 750 && annualIncome >= 80000) {
+    eligibilityStatus = "Eligible for premium loan rates.";
+} else if (creditScore >= 700 && annualIncome >= 50000) {
+    eligibilityStatus = "Eligible for standard loan rates.";
+} else if (creditScore >= 650 && annualIncome >= 40000) {
+    eligibilityStatus = "Eligible for subprime loan rates.";
+} else if (creditScore < 650) {
+    eligibilityStatus = "Not eligible due to low credit score.";
+} else {
+    eligibilityStatus = "Not eligible due to insufficient income.";
+}
+
+console.log(eligibilityStatus);
